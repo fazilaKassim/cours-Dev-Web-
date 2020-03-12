@@ -1,0 +1,32 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box}
+
+nav{width: 100%;
+min-height: 40px;
+background: black;}
+
+nav ul{list-style: none;
+margin: auto;
+width: 1000px;
+}
+
+nav ul li { display: block;
+float: left;
+width: 200px;
+height: 40px;
+text-align: center;
+line-height: 40px;
+border-left: 1px solid white}
+
+nav ul li:last-child{border-right: 1px solid white;}
+
+nav ul li a{color: white;
+text-decoration: none;
+display: block;
+transition: background .5s;
+text-transform: uppercase;
+letter-spacing: 2px;}
+
+nav ul li a:hover{background: orchid;
+}

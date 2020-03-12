@@ -1,0 +1,55 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+
+main{width: 100%;
+min-height: 100vh;
+height: 100%;
+background: crimson;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+}
+/* vh : unité qui permet de detecter la hauteur de lecran
+vw : unite qui permet de detecter la largueur de votre ecran ( il faut mettre un reset de "overflow-y : overlay;")
+
+justify-content permet de positionner lelement  
+align-items permet de placer lelement au milieu sur la vertical (flex strat permet de coller a gauche(debut), flexend permet de coller a droite(fin)*/
+
+section{width: 80%;
+min-height: 400px;
+background: pink;
+display: flex;
+flex-flow: wrap row;
+/* margin: auto; */}
+/* flex-direction: row;
+flex-wrap: wrap;} */
+/* flex permet d'aligner les blocs, a attribuer aux parents 
+flex-direction:columnn permet de passer a la verticale (les flex sont par defaut en horizontale )
+flex-wrap permet de passer a la ligne  
+flex-flow: combine le flex wrap et direction;*/
+
+
+section > article {width: 33.33%;
+min-height: 400px;
+min-width: 320px;
+border: 1px solid black;
+background: rgba(255, 255, 255, .2);
+flex: 1;
+}
+/* flex:1 permet de prendre tout la largeur si il y a de la place de disponilble flex:2 ou 3 permet de prendre plus de place ex50% ou 75%*/
+
+section article:first-child {background: pink;
+order: 2;}
+/* order permet de decaller ou inverser les blocs */
+
+div{position: fixed;
+top: 36vh;
+width: 200px;
+height: 200px;
+background:orange;}
+
+p{font-size: 2rem;}
+
+/* "rem"permet davoir la meme taille de typo dans tout les appareils  */

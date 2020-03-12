@@ -1,0 +1,45 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;/*masque le scroll bar sur laxe des ordonnés*/
+}
+
+div:nth-of-type(1){background: rgb(231, 31, 114);
+animation-name: name ;
+animation-duration: 5s;/*durée de l'animation*/
+animation-delay: 2s;/*delay de declenchement*/
+animation-iteration-count: 20; /*nombre de fois que lanimation se lit*/
+animation-fill-mode: forwards;/*la ou lanmation sarrete ex: forward a la fin */
+animation-timing-function: ease-in-out;/*acceleration */
+
+}
+
+div:nth-of-type(2){background: rgb(58, 2, 58)  ;
+    animation-name: fazila ;
+    animation-duration: 5s;/*durée de l'animation*/
+    animation-delay: 2s;/*delay de declenchement*/
+    animation-iteration-count: 20; /*nombre de fois que lanimation se lit*/
+    animation-fill-mode: forwards;/*la ou lanmation sarrete ex: forward a la fin */
+    animation-timing-function: ease-in-out;/*acceleration */
+    animation-direction: reverse;/*sens de la tete de lecteure */
+    animation-play-state: ;
+z-index: 2;}
+
+div{width: 200px;
+    height: 200px;
+position: absolute;}
+
+@keyframes name{
+    0%{margin-left: 0;}
+    50%{margin-left: 50%;
+    background:goldenrod;
+border-radius: 50%;}
+    100%{margin-left: 100%;}
+}
+@keyframes fazila{
+    0%{margin-left: 0;}
+    50%{margin-left: 50%;
+    background:salmon;
+border-radius: 50%;}
+    100%{margin-left: 100%;}
+}

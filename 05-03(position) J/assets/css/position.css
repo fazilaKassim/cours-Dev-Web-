@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    width: 900px;
+    margin: auto;
+    margin-top: 10%;
+    background: plum;
+    min-height: 300px;
+    position: relative;
+}
+
+section > article {
+    width: 300px;
+    height: 300px;
+    float: left;
+}
+
+article:nth-of-type(1){background:rgb(228, 121, 34);
+position: absolute;
+top: 0px;
+right: 0;
+z-index: 2;}
+
+article:nth-of-type(2){background:rgb(90, 0, 63);
+position: relative;
+top: 0px;
+left: 300px;}
+/* on ne peut pas mettre un right a une position relative */
+
+article:nth-of-type(3){background:rgb(163, 0, 54);
+position: fixed;
+top: 0;
+left: 0;}
+
+p{font-size: 30px;
+color: white;}
+
+p > span {color: rgb(163, 0, 54);
+font-weight: 300;
+border-bottom: 3px dotted beige;}
+hr{height: 20px;
+width: 20%;
+/* margin-top: 10% ;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 60px;
+sens de laiguille d'une montre  */
+margin: 10% auto 60px;
+
+
+background: rgb(240, 236, 22);}

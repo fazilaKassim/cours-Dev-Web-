@@ -1,0 +1,66 @@
+*{margin:0;
+padding: 0;
+box-sizing: border-box;}
+
+main#wrap{ width: 880px;
+margin: auto}
+
+article.toto{min-height: 200px;
+width: 880px;
+margin: auto;}
+
+/* selecteur enfants direct : le p se trouve a linterieur de la div  */
+/* div > p {color: crimson;} */
+
+/* selecteur adjacent: resultat sapplique sur le premier p suivant la fermeture du div  */
+/* div + p {color: green} */
+
+/* combinateur de frere : prend tout les p à lexterieur de l'article, similaire au selecteur adjacent */
+article.toto ~ p{ color: orange}
+
+/* selecteur d'attribut : cible tout les attributs */
+a[title]{text-decoration: none;
+color: fuchsia;}
+
+/* selecteur d'attribut : permet de cibler un attribut en particulier */
+/* a[href="http://www.simplon.org"]{text-decoration: none;
+    color: burlywood;} */
+
+    /* selecteur d'attribut : permet de cibler un attribut en particulier */
+    /* caret "^" permet de cibler tout les attrobut ayant un .co  */
+/* a[href^="http://www.sim"]{text-decoration: none;
+    color: burlywood;} */
+
+    li > a[href^="http://www.simplon.org"]{
+        text-decoration: none;
+        display: block;
+        padding: 20px;
+        border: 1px solid black;
+        background: crimson;
+        color: white;
+        width: 200px;
+        text-align: center;
+    }
+
+    /* selecteur vous permet de cibler les freres et  soeurs
+    even et 2n = pair 2 4 6
+    odd et 2n+1 = impair 1 3 5  */
+    p:nth-of-type(2n){font-weight: bold;
+    color: brown}
+
+/* nth child cible les enfants */
+    main#wrap div:first-child{background: beige;
+    min-width: 80px;
+    min-height: 80px}
+
+    li:nth-of-type(even), a{color:red }
+    li:nth-of-type(odd), a{color: blue;}
+
+header, footer{width: 100%;
+height: 40px;
+background: turquoise;}
+
+
+    li.fb {
+        background: url('assets/img/fb.png') no-repeat left top;
+        }
